@@ -2,9 +2,11 @@ print ("      ")
 \
 import random 
 
-number=random.randrange(1,50)
+x=int(input("\nThe computer will choose a number from 1-x, what do you want x to be?\n"))
 
-user_guess=int(input("\nGuess a number between 1 and 50:\n"))
+number=random.randrange(1,x)
+
+user_guess=int(input("\nGuess a number between 1 and {}\n".format(x)))
 
 while user_guess != number:
     if user_guess < number:
